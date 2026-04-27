@@ -15,8 +15,15 @@ ul {
     overflow: hidden;
     background-color: #428C43;
 }
+ul.ingredients {
+    list-style-type: disc;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    overflow: visible;
+}
 li {
-	float: left;
+	ul:not(.ingredients) li {float: left;};
 }
 li a {
 	display: block;
@@ -64,8 +71,8 @@ The stems of various herbs can easily be used to flavor sparkling water or to in
 <h3>Makes 125 ml (4 fl oz/ &frac12; cups)</h4>
 Prep: 15 mins, Rest: 2 Hrs
 <br>
-<p><b>Ingredients:<b><br>
-<ul>
+<p><b>Ingredients:<b>
+<ul class="ingredients"></ul>
 <li>30 g (1 oz) stale bread</li>
 <li>100 g (3 &frac12; oz) mixed soft fresh herb stems, such as flat-leaf parsley, basil, and mint</li>
 <li>1 garlic clove</li>
