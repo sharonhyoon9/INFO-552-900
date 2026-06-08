@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Philadelphia Birder</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .home-hero {
+      position: relative;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .home-hero h1 {
+      font-size: 3rem;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .home-hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .bird-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 40px 0;
+    }
+
+    .bird-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid var(--rule);
+      padding: 4px;
+      background-color: var(--white);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .bird-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(45, 74, 45, 0.15);
+    }
+
+    /* placeholder boxes for when images aren't added yet */
+    .bird-grid .placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: var(--parchment-dark);
+      border: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-family: 'Lato', sans-serif;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .center-button {
+      text-align: center;
+      margin: 20px 0 40px;
+    }
+
+    .center-button .button {
+      font-size: 1rem;
+      padding: 14px 36px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="site-title">The Philadelphia Birder</div>
+    <nav class="site-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="getting-started.html">Getting Started</a>
+      <a href="birding-spots.html">Birding Spots</a>
+      <a href="species.html">Species Guide</a>
+      <a href="community.html">Community &amp; Clubs</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <section class="home-hero">
+      <p class="section-label">Philadelphia · Pennsylvania</p>
+      <h1>The Philadelphia Birder</h1>
+      <p>A consolidated resource for birding in Philadelphia — where to go, what to look for, and how to connect.</p>
+    </section>
+
+    <!-- Bird image grid — replace placeholder divs with <img> tags when ready -->
+    <!-- To add an image: replace a .placeholder div with:
+         <img src="images/your-image.jpg" alt="Description of bird"> -->
+    <div class="bird-grid">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-25-song-sparrow.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+<img src="/Users/sharonyoon/Desktop/info552/community website/plate-12-baltimore-oriole.jpg.webp" alt="Bird name or description">
+
+    </div>
+
+    <!-- Center button -->
+    <div class="center-button">
+      <a href="about.html" class="button">Learn About This Site</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p><em>The Philadelphia Birder</em> — a community resource for birders in Philadelphia, PA.</p>
+    <p style="margin-top: 8px;">Ornithological illustrations from the <a href="https://publicdomainreview.org" target="_blank">Public Domain Review</a> and the <a href="https://www.biodiversitylibrary.org" target="_blank">Biodiversity Heritage Library</a>.</p>
+    <p style="margin-top: 8px; color: var(--rule);">Created for INFO 552 · Drexel University</p>
+  </footer>
+
+</body>
+</html>
