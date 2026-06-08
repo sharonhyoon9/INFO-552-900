@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
 :root {
   --parchment:     #F5F0E8;
   --parchment-dark:#EDE6D6;
@@ -138,6 +138,8 @@ h4 { font-size: 1.05rem; }
 p {
   margin-bottom: 1em;
   color: var(--text-body);
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
 }
 a {
   color: var(--ochre-dark);
@@ -267,6 +269,8 @@ ul, ol {
 }
 li {
   margin-bottom: 0.4em;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
 }
 .section-label {
   font-family: 'Lato', sans-serif;
@@ -285,6 +289,8 @@ li {
   font-size: 0.85rem;
   margin-top: 60px;
   width: 100%;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2rem;
 }
 .site-footer a {
   color: var(--parchment-dark);
@@ -301,16 +307,18 @@ img {
 }
 .margin-bird-left {
   position: fixed;
-  left: 60px;
+  left: 1vw;
   top: 250px;
-  width: 170px;
+  width: 12vw;
+  max-width: 300px;
   opacity: 0.85;
 }
 .margin-bird-right {
   position: fixed;
-  right: 60px;
+  right: 1vw;
   top: 250px;
-  width: 170px;
+  width: 12vw;
+  max-width: 300px;
   opacity: 0.85;
 }
 @media (max-width: 1200px) {
